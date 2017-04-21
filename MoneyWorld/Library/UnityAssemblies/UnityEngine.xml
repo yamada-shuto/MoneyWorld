@@ -18066,7 +18066,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>The edited string.</para>
       </returns>
     </member>
-<<<<<<< HEAD
     <member name="M:UnityEngine.GUILayout.TextArea(System.String,System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
       <summary>
         <para>Make a multi-line text field where the user can edit a string.</para>
@@ -18082,9 +18081,6 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       </returns>
     </member>
     <member name="M:UnityEngine.GUILayout.TextField(System.String,UnityEngine.GUILayoutOption[])">
-=======
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouchUnknown">
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
       <summary>
         <para>Make a single-line text field where the user can edit a string.</para>
       </summary>
@@ -22510,7 +22506,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="F:UnityEngine.KeyCode.Joystick1Button14">
       <summary>
-<<<<<<< HEAD
         <para>Button 14 on first joystick.</para>
       </summary>
     </member>
@@ -22518,12 +22513,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       <summary>
         <para>Button 15 on first joystick.</para>
       </summary>
-=======
-        <para>Set a ComputeBuffer value.</para>
-      </summary>
-      <param name="propertyName"></param>
-      <param name="buffer"></param>
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
     </member>
     <member name="F:UnityEngine.KeyCode.Joystick1Button16">
       <summary>
@@ -35031,16 +35020,7 @@ The block is specified by its x,y offset in the texture and by its width and hei
         <para>The far clipping plane distance.</para>
       </summary>
     </member>
-<<<<<<< HEAD
     <member name="P:UnityEngine.Projector.fieldOfView">
-=======
-    <member name="F:UnityEngine.Rendering.BuiltinShaderType.Sprite">
-      <summary>
-        <para>Default shader used by sprites.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEngine.Rendering.CameraEvent">
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
       <summary>
         <para>The field of view of the projection in degrees.</para>
       </summary>
@@ -36140,13 +36120,7 @@ frame. Minimum value is 1 and maximum is 33.</para>
     </member>
     <member name="P:UnityEngine.RectTransform.sizeDelta">
       <summary>
-<<<<<<< HEAD
         <para>The size of this RectTransform relative to the distances between the anchors.</para>
-=======
-        <para>Using this option indicates that the probe will never be automatically updated by Unity. This is useful if you wish to completely control the probe refresh behavior via scripting.
-
-See Also: ReflectionProbe.RenderProbe.</para>
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
       </summary>
     </member>
     <member name="T:UnityEngine.RectTransform.Axis">

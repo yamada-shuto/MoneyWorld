@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Cannon.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scene/NAGAURA/NAGAURA.unity
-=======
-- path: Assets/Scene/Murahata/PlayScene.unity
->>>>>>> b705f09b4bb21296d9f4707fa3931a5bed47db5a
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
   isLoaded: 1
   isActive: 1

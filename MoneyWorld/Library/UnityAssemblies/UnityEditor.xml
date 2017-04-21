@@ -16747,14 +16747,6 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
         <para>Application should exit when suspended to background.</para>
       </summary>
     </member>
-<<<<<<< HEAD
-=======
-    <member name="P:UnityEditor.PlayerSettings.iOS.forceHardShadowsOnMetal">
-      <summary>
-        <para>Should hard shadows be enforced when running on (mobile) Metal.</para>
-      </summary>
-    </member>
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
     <member name="P:UnityEditor.PlayerSettings.iOS.locationUsageDescription">
       <summary>
         <para>Describes the reason for access to the user's location data.</para>
@@ -16815,14 +16807,6 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
         <para>Deployment minimal version of iOS.</para>
       </summary>
     </member>
-<<<<<<< HEAD
-=======
-    <member name="P:UnityEditor.PlayerSettings.iOS.targetOSVersionString">
-      <summary>
-        <para>Deployment minimal version of iOS.</para>
-      </summary>
-    </member>
->>>>>>> 26c07fd9e2174d50ac2e81c39d4bc8046456e46b
     <member name="P:UnityEditor.PlayerSettings.iOS.useOnDemandResources">
       <summary>
         <para>Indicates whether application will use On Demand Resources (ODR) API.</para>
