@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/NAGAURA/NAGAURA.unity
+=======
+- path: Assets/Scene/Murahata/PlayScene.unity
+>>>>>>> b705f09b4bb21296d9f4707fa3931a5bed47db5a
   isLoaded: 1
   isActive: 1
