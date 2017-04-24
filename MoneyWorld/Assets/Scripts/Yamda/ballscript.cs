@@ -5,7 +5,7 @@ public class ballscript : MonoBehaviour
 {
 
     /** 発射元の砲台 */
-    Transform cannon;
+    public Transform cannon;
 
     // Use this for initialization
     void Start()
@@ -16,7 +16,7 @@ public class ballscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cannon.GetComponent(CannonScript).ballPosition = transform.position;
+        cannon.position = transform.position;
         if (transform.position.y < 0)
         {
             Destroy(gameObject);
@@ -36,7 +36,7 @@ public class ballscript : MonoBehaviour
         // 破棄されたら砲台側の砲弾生存フラグをクリア
         if (null != cannon)
         {
-            cannon.GetComponent(CannonScript).ballExists = false; // 砲弾存在
+            cannon.hasChanged = false; // 砲弾存在
         }
     }
 }
