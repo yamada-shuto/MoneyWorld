@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/NAGAURA/NAGAURA.unity
+=======
+- path: Assets/Scene/Yamada/Cannon.unity
+>>>>>>> 4b027aab549299885b5c6cc4487c92aca12cab91
   isLoaded: 1
   isActive: 1
