@@ -10,7 +10,7 @@ public class ballscript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class ballscript : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         MainScript.Log("ball collision", "ball collision: " + collision.gameObject.name + "," + collision.contacts[0].point);
-        // 地形なら破棄
+        // 地形に当たったら破棄
         if ("Terrain" == collision.gameObject.name)
         {
             Destroy(gameObject, 3); // 3秒後に破棄

@@ -100,10 +100,9 @@ public class ControllerManeger : MonoBehaviour {
                     GameObject obj = GameObject.Find(hitUnit.collider.name);
                     miniUnit = Instantiate(obj);
 
-
                     //  コントローラーと接続
                     miniUnit.transform.parent = transform;
-                    //  ミニマップを少し小さくする
+                    //  ミニユニットを少し小さくする
                     miniUnit.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
                     //  ミニユニットをコントローラーの座標より少し上に設定
                     miniUnit.transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
@@ -116,7 +115,7 @@ public class ControllerManeger : MonoBehaviour {
                     //  つかむフラグをオン
                     isGrab = true;
                     //  プレイヤーモードを設置モードにする
-                    nowMode = INSTALL;                                        
+                    nowMode = INSTALL;
                 }
             }
 
@@ -149,10 +148,13 @@ public class ControllerManeger : MonoBehaviour {
             miniUnit.transform.GetComponent<Rigidbody>().useGravity = true;
             //  コライダーを切る
             miniUnit.transform.GetComponent<Collider>().enabled = true;
-            //  指定した座標にユニットを移動させる
-            miniUnit.transform.position = new Vector3(unitSettingPos.x, unitSettingPos.y + 1.0f, unitSettingPos.z);
             //  大きさを元に戻す
             miniUnit.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            //  指定した座標にユニットを移動させる
+            miniUnit.transform.position = new Vector3(unitSettingPos.x, unitSettingPos.y + 0.5f ,  unitSettingPos.z);
+            //  傾けない
+            
+
             isGrab = false;
             //  モードを選ぶモードにする
             nowMode = CHOOSE;
@@ -160,10 +162,7 @@ public class ControllerManeger : MonoBehaviour {
             miniUnit.transform.parent = null;
 
         }
-        
     }
-
-
 }
 
 
