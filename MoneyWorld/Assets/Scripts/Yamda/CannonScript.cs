@@ -138,13 +138,14 @@ Transform ballPrefab;
             float z = r * Mathf.Cos(2 * Mathf.PI * transform.eulerAngles.y / 360);
             Vector3 angle = new Vector3(x, y, z);
             // インスタンスの生成
-            Rigidbody ball = (Rigidbody)Instantiate(ballPrefab, transform.FindChild("Cylinder").position + angle * 5, Quaternion.identity);
+            Transform ball;
+            ball = Instantiate(ballPrefab, transform.FindChild("Cylinder").position + angle * 5, Quaternion.identity);
             ballExists = true;
             // 力を加える
-            ball.AddForce(angle * BALL_FORCE);
+            ball.GetComponent<Rigidbody>().AddForce(angle * BALL_FORCE);
             MainScript.Log("AddForce", "AddForce=" + angle * BALL_FORCE + "," + (angle * BALL_FORCE).magnitude);
             // 発射元の砲台
-            ball.GetComponent(ballscript).cannon = transform;
+            ball.GetComponent<ballscript>().cannon = transform;
         }
     }
 

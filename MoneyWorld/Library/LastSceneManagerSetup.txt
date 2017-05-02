@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Cannon.unity
+- path: Assets/Scene/Murahata/PlayScene.unity
   isLoaded: 1
   isActive: 1

@@ -46,12 +46,6 @@ public class EnemyMove : MonoBehaviour
             return;
         // アニメーターのSpeedの値を設定する
         m_Animator.SetFloat("Speed", m_Agent.speed);
-        // 現在の位置から目的地への方向を計算する
-        m_Direction = (m_Destination - transform.position).normalized;
-        // 目的地の向きに視線を設定する
-        transform.LookAt(new Vector3(m_Destination.x, transform.position.y, m_Destination.z));
-        // 移動速度を設定する
-        m_Velocity = m_Direction * m_WalkSpeed;
         // 目的地から現在の位置までの距離が1未満か判定する
         if (Vector3.Distance(m_Destination, transform.position) < 0.8f)
         {
