@@ -11,8 +11,6 @@ public class EnemyMove : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent m_Agent;
     // アニメーター
     private Animator m_Animator;
-    // 目的地
-    public Vector3 m_Destination;
     // 歩く速度
     public float m_WalkSpeed;
     // 移動する方向と速度
@@ -21,21 +19,25 @@ public class EnemyMove : MonoBehaviour
     private Vector3 m_Direction;
     // 到着したか判定用
     private bool m_isArrived;
+    // スクリプト
+    private Destination m_Destination;
     // Use this for initialization
     void Start ()
     {
         //// キャラクターコントローラーを取得する
         //m_EnemyController = GetComponent<CharacterController>();
-        // 
+        // エージェントを取得する
         m_Agent = GetComponent<NavMeshAgent>();
         // アニメーターを取得する
         m_Animator = GetComponent<Animator>();
-        // 移動する方向と速度を初期化
-        m_Velocity = Vector3.zero;
         // 到着したかの判定用
         m_isArrived = false;
-        // 目的地を設定
-        m_Agent.SetDestination(m_Destination);
+        // スクリプトを取得する
+        m_Destination = GetComponent<Destination>();
+        // 目的地を設定する
+        m_Destination.SetDestination();
+        // エージェントの目的地を設定する
+        m_Agent.SetDestination(m_Destination.GetDestination());
 	}
 
     // Update is called once per frame
@@ -47,12 +49,14 @@ public class EnemyMove : MonoBehaviour
         // アニメーターのSpeedの値を設定する
         m_Animator.SetFloat("Speed", m_Agent.speed);
         // 目的地から現在の位置までの距離が1未満か判定する
-        if (Vector3.Distance(m_Destination, transform.position) < 0.8f)
+        if (Vector3.Distance(m_Destination.GetDestination(), transform.position) < 0.8f)
         {
-            // bool型変数を真にする
-            m_isArrived = true;
             // アニメーターのSpeedの値に0を設定する
             m_Animator.SetFloat("Speed", 0.0f);
+            // 目的地を設定する
+            m_Destination.SetDestination();
+            // エージェントの目的地を設定する
+            m_Agent.SetDestination(m_Destination.GetDestination());
         }
     }
 }
