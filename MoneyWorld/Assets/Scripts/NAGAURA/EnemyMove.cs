@@ -37,8 +37,8 @@ public class EnemyMove : MonoBehaviour
         // 目的地を設定する
         m_Destination.SetDestination();
         // エージェントの目的地を設定する
-        m_Agent.SetDestination(m_Destination.GetDestination());
-	}
+        if (m_Agent.pathStatus != NavMeshPathStatus.PathInvalid){m_Agent.SetDestination(m_Destination.GetDestination()); }
+    }
 
     // Update is called once per frame
     void Update()
