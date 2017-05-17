@@ -29,7 +29,7 @@ public class Destination : MonoBehaviour {
         // ランダムなVector2の値を取得
         Vector2 randDestination = Random.insideUnitCircle * 8;
         // 現在地から計算して目的地を設定する
-        m_Destination = m_CurrentPosition + new Vector3(randDestination.x, 0.0f, randDestination.y);
+        m_Destination = m_CurrentPosition + new Vector3(10.0f, 0.0f, 10.0f);
     }
 
     // 目的地を取得する
