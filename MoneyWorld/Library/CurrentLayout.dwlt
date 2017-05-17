@@ -88,10 +88,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 587
-  m_MinSize: {x: 917, y: 442}
+  m_MinSize: {x: 742, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 32
+  controlID: 124
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 33
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,15 +204,15 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 587
-  m_MinSize: {x: 277, y: 71}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 16}
   - {fileID: 14}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -488,19 +488,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Nagaura
+    - Assets/Scripts/Murahata
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Nagaura
+  - Assets/Scripts/Murahata
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s162129\Documents\MoneyWorld\MoneyWorld
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c290000
-    m_LastClickedID: 10572
-    m_ExpandedIDs: 0000000094270000ca28000056290000f02a0000982b0000162d0000e82d0000042f0000ffffff7f
+    m_SelectedIDs: 842c0000
+    m_LastClickedID: 11396
+    m_ExpandedIDs: 0000000094270000ca28000056290000a22a0000982b0000162d0000e82d0000802e0000042f0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +516,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -686,14 +686,14 @@ MonoBehaviour:
     width: 563
     height: 280
   m_SceneLighting: 1
-  lastFramingTime: 3846.4009256090867
+  lastFramingTime: 235.99294080903576
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 50.203423, y: -6.0432177, z: 43.243156}
+    m_Target: {x: 50.184082, y: 0.3017578, z: 50.181152}
     speed: 2
-    m_Value: {x: 50.203423, y: -6.0432177, z: 43.243156}
+    m_Value: {x: 50.184082, y: 0.3017578, z: 50.181152}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -716,17 +716,17 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0033591255, y: 0.92769676, z: -0.37322608, w: 0.008349497}
+    m_Target: {x: 0.08501321, y: 0.8968285, z: -0.1964499, w: 0.3871749}
     speed: 2
-    m_Value: {x: 0.0033591255, y: 0.92769676, z: -0.37322608, w: 0.008349497}
+    m_Value: {x: 0.08501212, y: 0.896817, z: -0.1964474, w: 0.38716996}
   m_Size:
-    m_Target: 12.730164
+    m_Target: 12.014778
     speed: 2
-    m_Value: 12.730164
+    m_Value: 12.014778
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
